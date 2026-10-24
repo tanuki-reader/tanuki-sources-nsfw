@@ -18,5 +18,7 @@ and `docs/repo-format.md`). Differences here:
 - Every source sets `nsfw: true` in `meta()`.
 - Its own signing key: the `TANUKI_SIGNING_KEY` Actions secret on this repo, backed up in the maintainer's
   macOS Keychain as **"tanuki-sources-nsfw signing key"** (account `tanuki-reader`). The app does **not**
-  pin it; users confirm its fingerprint on first add.
+  pin it; users confirm its fingerprint on first add. Public key: `XN8n+ClEWdG5eukT4SlHX1lJaPxugayIXe2RyuDJJDg=`.
+  To restore the secret:
+  `security find-generic-password -a tanuki-reader -s "tanuki-sources-nsfw signing key" -w | gh secret set TANUKI_SIGNING_KEY -R tanuki-reader/tanuki-sources-nsfw`.
 - Updating the SDK means bumping the `tanuki-sources` submodule. A wire or ABI change lands there first.
