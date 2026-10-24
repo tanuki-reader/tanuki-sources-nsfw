@@ -1,0 +1,8 @@
+name = "Tanuki Sources (Adult)"
+
+# The bundles CI publishes; same format as tanuki-sources/bundles.toml. Every source here is
+# adult-only (`meta().nsfw = true`).
+
+[[bundle]]
+id = "hipercool"
+crate = "hipercool"
