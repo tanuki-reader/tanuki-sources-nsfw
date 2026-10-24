@@ -1,0 +1,23 @@
+{
+  "formatVersion": 1,
+  "generatedAt": "2026-10-24T15:07:31Z",
+  "sources": [
+    {
+      "id": "hipercool",
+      "name": "Hipercool",
+      "lang": "pt-BR",
+      "version": 4,
+      "abi": 4,
+      "nsfw": true,
+      "baseUrl": "https://lerhentais.com",
+      "listings": [
+        "popular",
+        "latest",
+        "new"
+      ],
+      "wasmPath": "wasm/hipercool-v4.wasm",
+      "sha256": "9b2ea26143acb8c265586d9b4b6cb6a8d9996617160f5379cfaf8ea4e692d2a7",
+      "size": 200864
+    }
+  ]
+}
